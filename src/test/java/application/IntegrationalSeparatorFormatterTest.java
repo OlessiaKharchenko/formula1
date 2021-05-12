@@ -25,9 +25,9 @@ class IntegrationalSeparatorFormatterTest {
         List<Racer> racers = parser.createRacers("start_test.log", "end_test.log", "abbreviations_test.txt");
         String actual = formatter.format(racers);
         String expected = "1. Sebastian Vettel | FERRARI                   | 01:04.415"+ lineSeparator()
-                + "2. Daniel Ricciardo | RED BULL RACING TAG HEUER | 01:12.013"+ lineSeparator()
-                + "-----------------------------------------------------------"+ lineSeparator()
-                + "3. Lewis Hamilton   | MERCEDES                  | 01:12.460";
+                        + "2. Daniel Ricciardo | RED BULL RACING TAG HEUER | 01:12.013"+ lineSeparator()
+                        + "-----------------------------------------------------------"+ lineSeparator()
+                        + "3. Lewis Hamilton   | MERCEDES                  | 01:12.460";
         assertEquals(actual, expected);
     }
 }
